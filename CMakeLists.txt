@@ -1,16 +1,16 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(01.hello_world)
+project(guess_the_number)
 
-add_executable(hello_world 
-    hello_world.cpp
-    example.cpp
-    example.h
-    move_me_out.cpp
-    move_me_out.h
+add_executable(guess_the_number
+    guess_the_number.cpp
+    file_interactor.h
+    file_interactor.cpp
+    score_repository.h
+    score_repository.cpp
 )
 
-set_target_properties(hello_world PROPERTIES
+set_target_properties(guess_the_number PROPERTIES
     CXX_STANDARD 17
     CXX_STANDARD_REQUIRED ON
 )
